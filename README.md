@@ -26,5 +26,23 @@ optional arguments:
 ```
 Reproduce the unedited Figure 1B in this paper: [Bacterial Cytochrome P450-catalyzed Post-translational Macrocyclization](https://www.biorxiv.org/content/10.1101/2023.05.08.539676v1.article-metrics)
 ```
-python /home/bbhe/Python_Script/multilayer_network/pre2enzyme_layer_arg.py -seq1 "/data/bbhe/0-p450_pub_figure/figure_2/pre_0.35_out_cluster.tsv" -seq2 "/data/bbhe/0-p450_pub_figure/figure_2/P450_0.60_out_cluster.tsv" -seq1_node_num 0 -seq2_node_num 0 -c 0.3 -o /data/bbhe/txt_process/test_mssn
+python pre2enzyme_layer_arg.py -seq1 "/data/bbhe/0-p450_pub_figure/figure_2/pre_0.35_out_cluster.tsv" -seq2 "/data/bbhe/0-p450_pub_figure/figure_2/P450_0.60_out_cluster.tsv" -seq1_node_num 0 -seq2_node_num 0 -c 0.3 -o /data/bbhe/txt_process/test_mssn
 ```
+The input .tsv files can be found at 
+```
+/input_tsv
+```
+The output will be three figures:
+```
+/output
+pre_0.35_out_cluster_SSN.png
+P450_0.60_out_cluster_SSN.png
+seq_pairs_SSN.svg
+```
+**pre_0.35_out_cluster_SSN.png**
+![pre_0_SSN](https://github.com/Bio-bbhe/co-conservation/assets/82441159/c5d7c4fd-081c-4c5d-9eb3-a9e072dcdf8f)
+**P450_0.60_out_cluster_SSN.png**
+![P450_0_SSN](https://github.com/Bio-bbhe/co-conservation/assets/82441159/6418497c-5fc0-43f3-92ba-85419822dd8a)
+**seq_pairs_SSN** which is the unedited version of Figure 1B in our paper: [Bacterial Cytochrome P450-catalyzed Post-translational Macrocyclization](https://www.biorxiv.org/content/10.1101/2023.05.08.539676v1.article-metrics)
+![seq_pairs_SSN](https://github.com/Bio-bbhe/co-conservation/assets/82441159/d7561c4a-feed-41c1-8d91-5b5d4fc3ffa4)
+
